@@ -27,8 +27,6 @@ public class NeuralNet {
         }
         double[] final_output = previous_output;
 
-
-
         double error = 0;
         for (int i = 0; i < output_size; i++)
             error += Math.pow(expected_output[i] - final_output[i], 2);

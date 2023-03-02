@@ -5,7 +5,7 @@ public class Main {
         for (int i = 0; i < 1000000; i++){
             double[] input = generate_input();
             double[] expected_output = generate_expected_output(input);
-            net.process_input(input, expected_output, (i > 1000000 - 10 || i < 11));
+            net.process_input(input, expected_output, (i > 1000000 - 11 || i < 11));
         }
     }
 
