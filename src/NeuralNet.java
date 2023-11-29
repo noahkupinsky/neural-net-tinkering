@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class NeuralNet {
     static final double LEARNING_RATE = 0.05;
@@ -17,7 +16,7 @@ public class NeuralNet {
     }
 
     public void process_input(double[] input, double[] expected_output, boolean print_results){
-        ArrayList<double[]> layer_outputs = new ArrayList<double[]>();
+        ArrayList<double[]> layer_outputs = new ArrayList<>();
         layer_outputs.add(input);
         double[] previous_output = input;
         for (int layer = 0; layer < num_layers; layer++){
